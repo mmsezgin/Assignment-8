@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class A08_Q11 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter purchasing price:");
+		int num1 = sc.nextInt();
+		
+		System.out.println("Enter selling price:");
+		int num2 = sc.nextInt();
+		
+		sc.close();
+		
+		System.out.println(c_profits(num1, num2));
+		
+		
+	}
+	
+	public static String c_profits(int buyPrice, int sellPrice) {
+		return ((buyPrice < sellPrice) ? "profit" : (buyPrice > sellPrice) ? "loss" : "no loss");
+	}
+
+}
