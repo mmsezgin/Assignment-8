@@ -1,0 +1,23 @@
+public class A08_Q16 {
+
+	public static void main(String[] args) {
+
+		System.out.println(simpleRoomBook(false,2,1,2018));
+		System.out.println(simpleRoomBook(true,2,1,2018));
+		System.out.println(simpleRoomBook(true,7,2,2018));
+
+	}
+	
+	public static boolean simpleRoomBook(boolean isAvailible, int month, int day, int year) {
+		boolean date = true;
+		if (year != 2018) {
+			date = false;
+		} else if (month == 7) {
+			if (day <= 8 && day >=1) {
+				date = false;
+			}
+			
+		}
+		
+		return (isAvailible && date);
+	}
