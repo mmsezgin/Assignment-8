@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class A08_Q14 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+	
+		
+		System.out.println("Enter first boolean value:" );
+		boolean b1 = sc.nextBoolean();
+		
+		System.out.println("Enter second boolean value:" );
+		boolean b2 = sc.nextBoolean();
+		
+		System.out.println("Enter third boolean value:" );
+		boolean b3 = sc.nextBoolean();
+				
+		sc.close();
+		
+		System.out.println(threeLocks(b1, b2, b3));
+
+	}
+	
+	public static boolean threeLocks(boolean a, boolean b, boolean c) {
+		return ((a == true && b == true) || c == true);
+		
+	}
+
+}
