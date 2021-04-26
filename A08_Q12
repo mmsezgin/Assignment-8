@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class A08_Q12 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("To be or not to be");
+		
+		System.out.println("Enter a boolean value:");
+		boolean b1 = sc.nextBoolean();
+		
+		System.out.println("Enter a second thought boolean value:");
+		boolean b2 = sc.nextBoolean();
+		
+		sc.close();
+		
+		System.out.println(hamletQuote(b1, b2));
+		
+
+	}
+	public static boolean hamletQuote(boolean toBe, boolean notToBe) {
+		return (toBe || notToBe);
+		
+		
+	}
+	
+	
